@@ -146,7 +146,7 @@
                                 to additional.</p>
                         </div>
                         <div class="m-3">
-                            <button class="panda-btn-buy-now">Buy Now</button>
+                            <button onclick="btnClicked()" class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -179,12 +179,12 @@
             </div>
         </section>
         <!-- Backpack -->
-        <section class="container my-5" id="backpack">
+        <section class="container my-5 py-2" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <img id="backpack-img" src="images/bags/bag-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -230,8 +230,8 @@
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
-                <input class="form-control" type="text" placeholder="Your Email"><br>
-                <button class="panda-btn-buy-now">SUBMIT</button>
+                <input id="submit-confirm" class="form-control" type="text" placeholder="Your Email"><br>
+                <button id="submit-btn" class="panda-btn-buy-now" disabled>SUBMIT</button>
             </div>
         </section>
     </main>
@@ -244,6 +244,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- External script -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
